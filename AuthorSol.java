@@ -12,7 +12,7 @@ import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-public class Main {
+public class AuthorSol {
 	
 	public static void main(String[] args) {	
 		FastScanner fs = new FastScanner();
