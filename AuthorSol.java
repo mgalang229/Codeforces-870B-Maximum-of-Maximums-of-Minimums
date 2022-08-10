@@ -12,7 +12,33 @@ import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-public class AuthorSol {
+/*
+
+this is the case if k = 2
+given: n = 9, k = 2
+
+suffix min:
+3 4 5 1 2 2 3 1 3
+1 1 1 1 1 1 1 1 3
+
+prefix min:
+3 4 5 1 2 2 3 1 3
+3 3 3 1 1 1 1 1 1
+
+it means, our prefix and suffix arrays are:
+prefix = [3]
+suffix = [4 5 1 2 2 3 1 3]
+
+by getting the min value among the subsegments
+min(prefix) = 3
+min(suffix) = 1
+
+therefore,
+answer = max(prefix, suffix) = max(3, 1) = 3
+
+ */
+
+public class Main {
 	
 	public static void main(String[] args) {	
 		FastScanner fs = new FastScanner();
